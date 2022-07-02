@@ -21,21 +21,24 @@
 
 **_4. Code snippet_**
 ```python
-#Create game display
 import pygame
-pygame.init()
-WINDOW_WIDTH,WINDOW_HEIGHT=800,600
-displayscreen=pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))
-pygame.display.set_caption("My first pygame!")
+import random
+
+pygame.init()#遊戲模組啟動
+WINDOW_WIDTH,WINDOW_HEIGHT=1000,600
+displayscreen=pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))#產生畫布
+pygame.display.set_caption("Feed Rick Astley!!")
 
 ```
 ```python
-#built image object and setting its rec
-player_image=pygame.image.load("angry_bird.png")
+player_image=pygame.image.load("rick.png")
 player_rect=player_image.get_rect()
-player_rect.left=32
-player_rect.centery=WINDOW_HEIGHT//2
-displayscreen.blit(player_image,player_rect)
+player_rect.center=(WINDOW_WIDTH//2,WINDOW_HEIGHT-40)
+
+coin_image=pygame.image.load("FFF.png")
+coin_rect=coin_image.get_rect()
+coin_rect.x=random.randint(32,WINDOW_WIDTH-32)
+coin_rect.y=67
 ```
 **_5. Game Assets:_**:<br>
 [Icon Archive](https://iconarchive.com/) : provide lots of game charators to download<br>
