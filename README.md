@@ -1,5 +1,5 @@
 # PYGAME_basics-2
-# Python_Game: 利用PYGAME module 自己創造的小遊戲
+### Python_Game: 利用PYGAME module 自己創造的小遊戲
 
 **_1. References_**
    1. Pygame Page: http://pygame.org
